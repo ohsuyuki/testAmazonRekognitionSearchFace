@@ -31,5 +31,26 @@ extension ViewController {
             print(response)
         }
     }
-    
+
+    func searchFace(_ image: UIImage) {
+        let imgRekognition = AWSRekognitionImage()!
+        imgRekognition.bytes = UIImageJPEGRepresentation(image, 0)
+        
+        let request = AWSRekognitionSearchFacesByImageRequest()!
+        request.collectionId = "testRekognitionSearchFace"
+        request.image = imgRekognition
+
+        AWSRekognition.default().searchFaces(byImage: request) { (response, error) in
+            guard error == nil else {
+                print(error?.localizedDescription)
+                return
+            }
+            guard let response = response else {
+                print("response is nil")
+                return
+            }
+            print(response)
+        }
+    }
+
 }

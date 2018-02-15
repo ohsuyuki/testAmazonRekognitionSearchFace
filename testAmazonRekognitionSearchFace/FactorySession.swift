@@ -9,11 +9,6 @@
 import Foundation
 import AVFoundation
 
-enum Result<T, Error> {
-    case success(T)
-    case failure(Error)
-}
-
 struct FactorySessionInstance {
     let session: AVCaptureSession
     let device: AVCaptureDevice

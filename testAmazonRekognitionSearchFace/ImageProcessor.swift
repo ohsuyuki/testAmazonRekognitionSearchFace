@@ -8,6 +8,11 @@
 
 import Foundation
 import UIKit
+import AWSRekognition
+
+enum ErrorSearchFace {
+    case unknown
+}
 
 class ImageProcessor {
 

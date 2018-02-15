@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AWSRekognition
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -141,9 +142,30 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             }
         }
         #else
-            self.storeImage.set(nil)
-            DispatchQueue.main.sync {
-                self.imageViewTrg.image = image
+            let imgRekognition = AWSRekognitionImage()!
+            imgRekognition.bytes = UIImageJPEGRepresentation(image, 0)
+            
+            let request = AWSRekognitionSearchFacesByImageRequest()!
+            request.collectionId = "testRekognitionSearchFace"
+            request.image = imgRekognition
+            
+            AWSRekognition.default().searchFaces(byImage: request) { (response, error) in
+                defer {
+                    self.storeImage.set(nil)
+                    DispatchQueue.main.sync {
+                        self.imageViewTrg.image = image
+                    }
+                }
+                
+                guard error == nil else {
+                    print(error?.localizedDescription)
+                    return
+                }
+                guard let response = response else {
+                    print("response is nil")
+                    return
+                }
+                print(response)
             }
         #endif
     }

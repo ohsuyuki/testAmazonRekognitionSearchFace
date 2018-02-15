@@ -20,6 +20,7 @@
 		1C440F3720354787006651FA /* ExtensionCMSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3620354787006651FA /* ExtensionCMSampleBuffer.swift */; };
 		1C440F3920354955006651FA /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3820354955006651FA /* ImageProcessor.swift */; };
 		1C440F3B20354AC3006651FA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3A20354AC3006651FA /* Store.swift */; };
+		1C440F3D20355B01006651FA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3C20355B01006651FA /* Result.swift */; };
 		83F5A3100B6C5DC40CC0D928 /* Pods_testAmazonRekognitionSearchFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E148AA26314BC9D9D74DF265 /* Pods_testAmazonRekognitionSearchFace.framework */; };
 		8813FEF3A4A3540002F5FDF0 /* Pods_testAmazonRekognitionSearchFaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */; };
 		8B2E741028574D305E4BF8F8 /* Pods_testAmazonRekognitionSearchFaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */; };
@@ -63,6 +64,7 @@
 		1C440F3620354787006651FA /* ExtensionCMSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCMSampleBuffer.swift; sourceTree = "<group>"; };
 		1C440F3820354955006651FA /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		1C440F3A20354AC3006651FA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1C440F3C20355B01006651FA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		268FA90928BC3BF38A2BC223 /* Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceUITests/Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 				1C440F3620354787006651FA /* ExtensionCMSampleBuffer.swift */,
 				1C440F3820354955006651FA /* ImageProcessor.swift */,
 				1C440F3A20354AC3006651FA /* Store.swift */,
+				1C440F3C20355B01006651FA /* Result.swift */,
 			);
 			path = testAmazonRekognitionSearchFace;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C440F3D20355B01006651FA /* Result.swift in Sources */,
 				1C2FB3C22032EE390045AC88 /* ExtensionViewController.swift in Sources */,
 				1C2FB3942032EAFF0045AC88 /* ViewController.swift in Sources */,
 				1C440F3720354787006651FA /* ExtensionCMSampleBuffer.swift in Sources */,
