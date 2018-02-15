@@ -15,12 +15,13 @@
 		1C2FB3A72032EAFF0045AC88 /* testAmazonRekognitionSearchFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3A62032EAFF0045AC88 /* testAmazonRekognitionSearchFaceTests.swift */; };
 		1C2FB3B22032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3B12032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.swift */; };
 		1C2FB3C02032EDA20045AC88 /* ExtensionAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3BF2032EDA20045AC88 /* ExtensionAppDelegate.swift */; };
-		1C2FB3C22032EE390045AC88 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3C12032EE390045AC88 /* ExtensionViewController.swift */; };
 		1C440F2220351A6C006651FA /* FactorySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F2120351A6C006651FA /* FactorySession.swift */; };
 		1C440F3720354787006651FA /* ExtensionCMSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3620354787006651FA /* ExtensionCMSampleBuffer.swift */; };
 		1C440F3920354955006651FA /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3820354955006651FA /* ImageProcessor.swift */; };
 		1C440F3B20354AC3006651FA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3A20354AC3006651FA /* Store.swift */; };
 		1C440F3D20355B01006651FA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3C20355B01006651FA /* Result.swift */; };
+		1C440F3F2035695D006651FA /* ViewControllerIndexFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F3E2035695D006651FA /* ViewControllerIndexFace.swift */; };
+		1C440F4120356CA0006651FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C440F4020356CA0006651FA /* Constants.swift */; };
 		83F5A3100B6C5DC40CC0D928 /* Pods_testAmazonRekognitionSearchFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E148AA26314BC9D9D74DF265 /* Pods_testAmazonRekognitionSearchFace.framework */; };
 		8813FEF3A4A3540002F5FDF0 /* Pods_testAmazonRekognitionSearchFaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */; };
 		8B2E741028574D305E4BF8F8 /* Pods_testAmazonRekognitionSearchFaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */; };
@@ -59,12 +60,13 @@
 		1C2FB3B12032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAmazonRekognitionSearchFaceUITests.swift; sourceTree = "<group>"; };
 		1C2FB3B32032EAFF0045AC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C2FB3BF2032EDA20045AC88 /* ExtensionAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAppDelegate.swift; sourceTree = "<group>"; };
-		1C2FB3C12032EE390045AC88 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		1C440F2120351A6C006651FA /* FactorySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySession.swift; sourceTree = "<group>"; };
 		1C440F3620354787006651FA /* ExtensionCMSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCMSampleBuffer.swift; sourceTree = "<group>"; };
 		1C440F3820354955006651FA /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		1C440F3A20354AC3006651FA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		1C440F3C20355B01006651FA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		1C440F3E2035695D006651FA /* ViewControllerIndexFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIndexFace.swift; sourceTree = "<group>"; };
+		1C440F4020356CA0006651FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		268FA90928BC3BF38A2BC223 /* Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceUITests/Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,17 +132,18 @@
 			children = (
 				1C2FB3912032EAFF0045AC88 /* AppDelegate.swift */,
 				1C2FB3932032EAFF0045AC88 /* ViewController.swift */,
+				1C440F3E2035695D006651FA /* ViewControllerIndexFace.swift */,
 				1C2FB3952032EAFF0045AC88 /* Main.storyboard */,
 				1C2FB3982032EAFF0045AC88 /* Assets.xcassets */,
 				1C2FB39A2032EAFF0045AC88 /* LaunchScreen.storyboard */,
 				1C2FB39D2032EAFF0045AC88 /* Info.plist */,
 				1C2FB3BF2032EDA20045AC88 /* ExtensionAppDelegate.swift */,
-				1C2FB3C12032EE390045AC88 /* ExtensionViewController.swift */,
 				1C440F2120351A6C006651FA /* FactorySession.swift */,
 				1C440F3620354787006651FA /* ExtensionCMSampleBuffer.swift */,
 				1C440F3820354955006651FA /* ImageProcessor.swift */,
 				1C440F3A20354AC3006651FA /* Store.swift */,
 				1C440F3C20355B01006651FA /* Result.swift */,
+				1C440F4020356CA0006651FA /* Constants.swift */,
 			);
 			path = testAmazonRekognitionSearchFace;
 			sourceTree = "<group>";
@@ -482,11 +485,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C440F3D20355B01006651FA /* Result.swift in Sources */,
-				1C2FB3C22032EE390045AC88 /* ExtensionViewController.swift in Sources */,
 				1C2FB3942032EAFF0045AC88 /* ViewController.swift in Sources */,
 				1C440F3720354787006651FA /* ExtensionCMSampleBuffer.swift in Sources */,
 				1C440F3B20354AC3006651FA /* Store.swift in Sources */,
 				1C2FB3C02032EDA20045AC88 /* ExtensionAppDelegate.swift in Sources */,
+				1C440F4120356CA0006651FA /* Constants.swift in Sources */,
+				1C440F3F2035695D006651FA /* ViewControllerIndexFace.swift in Sources */,
 				1C440F3920354955006651FA /* ImageProcessor.swift in Sources */,
 				1C440F2220351A6C006651FA /* FactorySession.swift in Sources */,
 				1C2FB3922032EAFF0045AC88 /* AppDelegate.swift in Sources */,

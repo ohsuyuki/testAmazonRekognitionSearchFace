@@ -10,33 +10,19 @@ import UIKit
 import AVFoundation
 import AWSRekognition
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageViewTrg: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
-    @IBAction func registerFace(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            let pickerView = UIImagePickerController()
-            pickerView.sourceType = .photoLibrary
-            pickerView.delegate = self
-            present(pickerView, animated: true)
-        }
-    }
-
+    @IBAction func unwindViewController(segue: UIStoryboardSegue) {}
+    
     private var sessionInstance: FactorySessionInstance? = nil
     private let storeImage = Store<UIImage>()
     private var imageViewBounds: CGRect!
     private let queueImageProcess = DispatchQueue(label: "imageProcess")
     private var viewRects: [UIView] = []
-
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
-            return
-        }
-        indexFace(image)
-        dismiss(animated: true)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +43,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         session.startRunning()
 
         imageViewBounds = CGRect(origin: imageView.bounds.origin, size: imageView.bounds.size)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        guard let session = self.sessionInstance?.session else {
+            return
+        }
+        session.stopRunning()
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,17 +90,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             return
         }
 
-        #if false
-        let trgImgRekognition = AWSRekognitionImage()!
-        trgImgRekognition.bytes = UIImageJPEGRepresentation(image, 0)
+        let imgRekognition = AWSRekognitionImage()!
+        imgRekognition.bytes = UIImageJPEGRepresentation(image, 0)
         
-        let request = AWSRekognitionCompareFacesRequest()!
-        request.sourceImage = srcImgRekognition
-        request.targetImage = trgImgRekognition
+        let request = AWSRekognitionSearchFacesByImageRequest()!
+        request.collectionId = Key.collectionId
+        request.image = imgRekognition
         
-        print("compareFaces")
-        
-        AWSRekognition.default().compareFaces(request) { (response, error) in
+        AWSRekognition.default().searchFaces(byImage: request) { (response, error) in
             defer {
                 self.storeImage.set(nil)
                 DispatchQueue.main.sync {
@@ -115,59 +105,47 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 }
             }
             
-            print("compareFaces finish")
-            
             guard error == nil else {
-                print("compareFaces error")
-                DispatchQueue.main.sync {
-                    self.labelError.text = error?.localizedDescription
-                    self.labelSimilarity.text = "unmatch..."
-                }
+                print(error?.localizedDescription)
                 return
             }
-            
-            if let response = response {
-                print("compareFaces complete")
-                var similarity: String = "unmatch..."
-                if let faceMathes = response.faceMatches {
-                    for faceMatch in faceMathes {
-                        similarity = "\(faceMatch.similarity)"
-                    }
+            guard let response = response else {
+                print("response is nil")
+                return
+            }
+            print(response)
+
+            guard let faceMatches = response.faceMatches else {
+                return
+            }
+
+            var labelText = ""
+            var count = 0
+            for match in faceMatches {
+                guard let face = match.face else {
+                    continue
                 }
-                
-                DispatchQueue.main.sync {
-                    self.labelSimilarity.text = similarity
-                    self.labelError.text = "no error"
+                if labelText.isEmpty == false {
+                    labelText += "\n"
                 }
+
+                var name = "unknown"
+                var confidence: NSNumber = -1
+                if let tmpName = face.externalImageId {
+                    name = tmpName
+                }
+                if let tmpConfidence = face.confidence {
+                    confidence = tmpConfidence
+                }
+                labelText += "\(name) (\(confidence))"
+                count += 1
+            }
+
+            DispatchQueue.main.async {
+                self.label.numberOfLines = count
+                self.label.text = labelText
             }
         }
-        #else
-            let imgRekognition = AWSRekognitionImage()!
-            imgRekognition.bytes = UIImageJPEGRepresentation(image, 0)
-            
-            let request = AWSRekognitionSearchFacesByImageRequest()!
-            request.collectionId = "testRekognitionSearchFace"
-            request.image = imgRekognition
-            
-            AWSRekognition.default().searchFaces(byImage: request) { (response, error) in
-                defer {
-                    self.storeImage.set(nil)
-                    DispatchQueue.main.sync {
-                        self.imageViewTrg.image = image
-                    }
-                }
-                
-                guard error == nil else {
-                    print(error?.localizedDescription)
-                    return
-                }
-                guard let response = response else {
-                    print("response is nil")
-                    return
-                }
-                print(response)
-            }
-        #endif
     }
 
     private func drawRects(_ rects: [CGRect]) {
