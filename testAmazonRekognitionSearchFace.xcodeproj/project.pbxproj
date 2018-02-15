@@ -14,6 +14,11 @@
 		1C2FB39C2032EAFF0045AC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2FB39A2032EAFF0045AC88 /* LaunchScreen.storyboard */; };
 		1C2FB3A72032EAFF0045AC88 /* testAmazonRekognitionSearchFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3A62032EAFF0045AC88 /* testAmazonRekognitionSearchFaceTests.swift */; };
 		1C2FB3B22032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3B12032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.swift */; };
+		1C2FB3C02032EDA20045AC88 /* ExtensionAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3BF2032EDA20045AC88 /* ExtensionAppDelegate.swift */; };
+		1C2FB3C22032EE390045AC88 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2FB3C12032EE390045AC88 /* ExtensionViewController.swift */; };
+		83F5A3100B6C5DC40CC0D928 /* Pods_testAmazonRekognitionSearchFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E148AA26314BC9D9D74DF265 /* Pods_testAmazonRekognitionSearchFace.framework */; };
+		8813FEF3A4A3540002F5FDF0 /* Pods_testAmazonRekognitionSearchFaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */; };
+		8B2E741028574D305E4BF8F8 /* Pods_testAmazonRekognitionSearchFaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153F396DB3E877FF375FA0CF /* Pods-testAmazonRekognitionSearchFaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFaceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceTests/Pods-testAmazonRekognitionSearchFaceTests.release.xcconfig"; sourceTree = "<group>"; };
 		1C2FB38E2032EAFF0045AC88 /* testAmazonRekognitionSearchFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testAmazonRekognitionSearchFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2FB3912032EAFF0045AC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C2FB3932032EAFF0045AC88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 		1C2FB3AD2032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAmazonRekognitionSearchFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2FB3B12032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAmazonRekognitionSearchFaceUITests.swift; sourceTree = "<group>"; };
 		1C2FB3B32032EAFF0045AC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C2FB3BF2032EDA20045AC88 /* ExtensionAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAppDelegate.swift; sourceTree = "<group>"; };
+		1C2FB3C12032EE390045AC88 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		268FA90928BC3BF38A2BC223 /* Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceUITests/Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F9F19E6356C8FDA16BDD25 /* Pods-testAmazonRekognitionSearchFaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceTests/Pods-testAmazonRekognitionSearchFaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57A3D9829C5577283F1CEF65 /* Pods-testAmazonRekognitionSearchFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFace/Pods-testAmazonRekognitionSearchFace.debug.xcconfig"; sourceTree = "<group>"; };
+		C446656D2B4D2E386ED2D053 /* Pods-testAmazonRekognitionSearchFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFace/Pods-testAmazonRekognitionSearchFace.release.xcconfig"; sourceTree = "<group>"; };
+		E148AA26314BC9D9D74DF265 /* Pods_testAmazonRekognitionSearchFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAmazonRekognitionSearchFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D60E699542B111B948B8EE /* Pods-testAmazonRekognitionSearchFaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAmazonRekognitionSearchFaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceUITests/Pods-testAmazonRekognitionSearchFaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F5A3100B6C5DC40CC0D928 /* Pods_testAmazonRekognitionSearchFace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2E741028574D305E4BF8F8 /* Pods_testAmazonRekognitionSearchFaceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8813FEF3A4A3540002F5FDF0 /* Pods_testAmazonRekognitionSearchFaceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				1C2FB3A52032EAFF0045AC88 /* testAmazonRekognitionSearchFaceTests */,
 				1C2FB3B02032EAFF0045AC88 /* testAmazonRekognitionSearchFaceUITests */,
 				1C2FB38F2032EAFF0045AC88 /* Products */,
+				EEE68FB2B9D3CD3164F90188 /* Pods */,
+				4F96D802E9B1B1B5FD57D702 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +124,8 @@
 				1C2FB3982032EAFF0045AC88 /* Assets.xcassets */,
 				1C2FB39A2032EAFF0045AC88 /* LaunchScreen.storyboard */,
 				1C2FB39D2032EAFF0045AC88 /* Info.plist */,
+				1C2FB3BF2032EDA20045AC88 /* ExtensionAppDelegate.swift */,
+				1C2FB3C12032EE390045AC88 /* ExtensionViewController.swift */,
 			);
 			path = testAmazonRekognitionSearchFace;
 			sourceTree = "<group>";
@@ -125,6 +148,29 @@
 			path = testAmazonRekognitionSearchFaceUITests;
 			sourceTree = "<group>";
 		};
+		4F96D802E9B1B1B5FD57D702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E148AA26314BC9D9D74DF265 /* Pods_testAmazonRekognitionSearchFace.framework */,
+				2C61CA971C576A3A88EE065C /* Pods_testAmazonRekognitionSearchFaceTests.framework */,
+				3FBDE7420A185FEA11D3E428 /* Pods_testAmazonRekognitionSearchFaceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEE68FB2B9D3CD3164F90188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57A3D9829C5577283F1CEF65 /* Pods-testAmazonRekognitionSearchFace.debug.xcconfig */,
+				C446656D2B4D2E386ED2D053 /* Pods-testAmazonRekognitionSearchFace.release.xcconfig */,
+				46F9F19E6356C8FDA16BDD25 /* Pods-testAmazonRekognitionSearchFaceTests.debug.xcconfig */,
+				153F396DB3E877FF375FA0CF /* Pods-testAmazonRekognitionSearchFaceTests.release.xcconfig */,
+				E3D60E699542B111B948B8EE /* Pods-testAmazonRekognitionSearchFaceUITests.debug.xcconfig */,
+				268FA90928BC3BF38A2BC223 /* Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C2FB3B62032EAFF0045AC88 /* Build configuration list for PBXNativeTarget "testAmazonRekognitionSearchFace" */;
 			buildPhases = (
+				8A9B6E48CC0F48F1D0B3846D /* [CP] Check Pods Manifest.lock */,
 				1C2FB38A2032EAFF0045AC88 /* Sources */,
 				1C2FB38B2032EAFF0045AC88 /* Frameworks */,
 				1C2FB38C2032EAFF0045AC88 /* Resources */,
+				7BA5675A9439DCD20DF56B94 /* [CP] Embed Pods Frameworks */,
+				648AFCF8043E33E8C7F23421 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C2FB3B92032EAFF0045AC88 /* Build configuration list for PBXNativeTarget "testAmazonRekognitionSearchFaceTests" */;
 			buildPhases = (
+				B816731635F2D03616D4B979 /* [CP] Check Pods Manifest.lock */,
 				1C2FB39E2032EAFF0045AC88 /* Sources */,
 				1C2FB39F2032EAFF0045AC88 /* Frameworks */,
 				1C2FB3A02032EAFF0045AC88 /* Resources */,
+				F1E4B340FD4FDCDA2A1502A5 /* [CP] Embed Pods Frameworks */,
+				82411D8AA19F98044988533C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C2FB3BC2032EAFF0045AC88 /* Build configuration list for PBXNativeTarget "testAmazonRekognitionSearchFaceUITests" */;
 			buildPhases = (
+				A717218ACEC4A1605368974D /* [CP] Check Pods Manifest.lock */,
 				1C2FB3A92032EAFF0045AC88 /* Sources */,
 				1C2FB3AA2032EAFF0045AC88 /* Frameworks */,
 				1C2FB3AB2032EAFF0045AC88 /* Resources */,
+				3EDB645210E548081C2B706A /* [CP] Embed Pods Frameworks */,
+				83334795AD4B2A5D2A4F0F99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +309,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EDB645210E548081C2B706A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceUITests/Pods-testAmazonRekognitionSearchFaceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		648AFCF8043E33E8C7F23421 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFace/Pods-testAmazonRekognitionSearchFace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BA5675A9439DCD20DF56B94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFace/Pods-testAmazonRekognitionSearchFace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFace/Pods-testAmazonRekognitionSearchFace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82411D8AA19F98044988533C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceTests/Pods-testAmazonRekognitionSearchFaceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83334795AD4B2A5D2A4F0F99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceUITests/Pods-testAmazonRekognitionSearchFaceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A9B6E48CC0F48F1D0B3846D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testAmazonRekognitionSearchFace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A717218ACEC4A1605368974D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testAmazonRekognitionSearchFaceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B816731635F2D03616D4B979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testAmazonRekognitionSearchFaceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E4B340FD4FDCDA2A1502A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAmazonRekognitionSearchFaceTests/Pods-testAmazonRekognitionSearchFaceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C2FB38A2032EAFF0045AC88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2FB3C22032EE390045AC88 /* ExtensionViewController.swift in Sources */,
 				1C2FB3942032EAFF0045AC88 /* ViewController.swift in Sources */,
+				1C2FB3C02032EDA20045AC88 /* ExtensionAppDelegate.swift in Sources */,
 				1C2FB3922032EAFF0045AC88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +633,7 @@
 		};
 		1C2FB3B72032EAFF0045AC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A3D9829C5577283F1CEF65 /* Pods-testAmazonRekognitionSearchFace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -433,12 +643,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquid.testAmazonRekognitionSearchFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		1C2FB3B82032EAFF0045AC88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C446656D2B4D2E386ED2D053 /* Pods-testAmazonRekognitionSearchFace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,12 +659,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquid.testAmazonRekognitionSearchFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		1C2FB3BA2032EAFF0045AC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F9F19E6356C8FDA16BDD25 /* Pods-testAmazonRekognitionSearchFaceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +683,7 @@
 		};
 		1C2FB3BB2032EAFF0045AC88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153F396DB3E877FF375FA0CF /* Pods-testAmazonRekognitionSearchFaceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +701,7 @@
 		};
 		1C2FB3BD2032EAFF0045AC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D60E699542B111B948B8EE /* Pods-testAmazonRekognitionSearchFaceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +718,7 @@
 		};
 		1C2FB3BE2032EAFF0045AC88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 268FA90928BC3BF38A2BC223 /* Pods-testAmazonRekognitionSearchFaceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
